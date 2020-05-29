@@ -1,10 +1,19 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon src/index.js",
+    "start:ci": "node src/index.js"
+  },
   "dependencies": {
+    "apollo-datasource": "^0.7.1",
+    "apollo-datasource-rest": "^0.9.2",
     "apollo-server": "^2.14.1",
-    "graphql": "^15.0.0"
+    "graphql": "^15.0.0",
+    "isemail": "^3.2.0",
+    "nodemon": "^2.0.4"
   }
 }
